@@ -27,7 +27,7 @@ export default function Home() {
           <div className="w-full flex justify-center px-8 mt-4 mb-4">
             <div className="w-full max-w-5xl bg-blue-900 rounded-xl py-6 text-center">
               <h1 className="text-4xl font-extrabold text-yellow-400 tracking-wide">
-                GTOWN Emergeant
+                GTOWN Emergeant - test
               </h1>
             </div>
           </div>
