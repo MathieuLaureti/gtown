@@ -3,7 +3,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/gtown',
-  assetPrefix: '/gtown',
+  assetPrefix: '/gtown/',
 };
 
 module.exports = nextConfig;
