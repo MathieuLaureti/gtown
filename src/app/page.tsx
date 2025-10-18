@@ -3,6 +3,7 @@ import TopMenu from './top_menu';
 import Programmation from './components/programmation';
 import Gallery from './components/gallery';
 import Image from 'next/image';
+import "./globals.css";
 
 export default function Home() {
   const people = [
