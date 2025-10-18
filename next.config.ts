@@ -2,8 +2,7 @@
 
 const nextConfig = {
   output: 'export',
-  basePath: '/gtown',
-  assetPrefix: '/gtown/',
+  images: { unoptimized: true },
 };
 
 module.exports = nextConfig;
