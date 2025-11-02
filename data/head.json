@@ -1,0 +1,12 @@
+{
+  "title": "G-Town Emergeant",
+  "theme": {
+    "colors": {
+        "primary": "#BFD8F9",
+        "secondary": "#8B7A66",
+        "background": "#0F172A", 
+        "surface": "#1E293B", 
+        "text-color": "#E2E8F0" 
+    }
+  }
+}

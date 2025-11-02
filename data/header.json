@@ -1,5 +1,5 @@
 {
-  "logo": "images/logo.jpg",
+  "logo": "images/logo.svg",
   "title": "G-Town Emergeant",
   "links": [
     { "label": "Programmation", "target": "#program" },

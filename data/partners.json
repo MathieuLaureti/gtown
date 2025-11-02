@@ -1,42 +1,44 @@
 {
-  "main": [
-    {
-      "name": "Main Partner 1",
-      "logo": "placeholders/200x100.svg"
-    },
-    {
-      "name": "Main Partner 2",
-      "logo": "placeholders/200x100.svg"
-    },
-    {
-      "name": "Main Partner 3",
-      "logo": "placeholders/200x100.svg"
-    }
-  ],
-  "support": [
-    {
-      "name": "Partner A",
-      "logo": "placeholders/150x80.svg"
-    },
-    {
-      "name": "Partner B",
-      "logo": "placeholders/150x80.svg"
-    },
-    {
-      "name": "Partner C",
-      "logo": "placeholders/150x80.svg"
-    },
-    {
-      "name": "Partner D",
-      "logo": "placeholders/150x80.svg"
-    },
-    {
-      "name": "Partner E",
-      "logo": "placeholders/150x80.svg"
-    },
-    {
-      "name": "Partner F",
-      "logo": "placeholders/150x80.svg"
-    }
-  ]
+    "title": "Nos Partenaires",
+    "subtitle": "Avec le soutient de",
+    "main": [
+        {
+        "name": "Main Partner 1",
+        "logo": "placeholders/200x100.svg"
+        },
+        {
+        "name": "Main Partner 2",
+        "logo": "placeholders/200x100.svg"
+        },
+        {
+        "name": "Main Partner 3",
+        "logo": "placeholders/200x100.svg"
+        }
+    ],
+    "support": [
+        {
+        "name": "Partner A",
+        "logo": "placeholders/150x80.svg"
+        },
+        {
+        "name": "Partner B",
+        "logo": "placeholders/150x80.svg"
+        },
+        {
+        "name": "Partner C",
+        "logo": "placeholders/150x80.svg"
+        },
+        {
+        "name": "Partner D",
+        "logo": "placeholders/150x80.svg"
+        },
+        {
+        "name": "Partner E",
+        "logo": "placeholders/150x80.svg"
+        },
+        {
+        "name": "Partner F",
+        "logo": "placeholders/150x80.svg"
+        }
+    ]
 }

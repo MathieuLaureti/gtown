@@ -3,57 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G-Town Emergeant</title>
+    <title>[title]</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#1E90FF',
-              secondary: '#FF7F50',
-              background: '#0F172A',
-            },
-          },
-        },
-      };
+        fetch('data/head.json')
+        .then(res => res.json())
+        .then(cfg => {
+            // set title
+            document.title = cfg.title;
+
+            // apply Tailwind theme dynamically
+            tailwind.config = {
+            theme: {
+                extend: cfg.theme
+            }
+            };
+        })
+        .catch(err => console.error('Failed to load config:', err));
     </script>
 </head>
 
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-background text-text-text-color font-sans">
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <header class="bg-surface shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-4">
                 <img src="images/logo.jpg" alt="GTE logo" class="h-12 w-auto"/>
-                <h1 class="text-2xl font-bold text-gray-800">G-Town Emergeant</h1>
+                <h1 class="text-2xl font-bold text-text-color">[title]</h1>
             </div>
             
-            <div class="flex space-x-6">
-                <a href="#program" class="text-gray-600 hover:text-blue-600 transition">Program</a>
-                <a href="#artists" class="text-gray-600 hover:text-blue-600 transition">Artists</a>
-                <a href="#partners" class="text-gray-600 hover:text-blue-600 transition">Partners</a>
-                <a href="#about" class="text-gray-600 hover:text-blue-600 transition">About</a>
-            </div>
+            <div class="flex space-x-6"></div>
         </nav>
     </header>
 
     <main class="container mx-auto px-6 py-12">
 
         <!-- Title + logo section -->
-        <section class="text-center mb-16">
-            <h2 class="text-5xl font-extrabold text-blue-600 mb-4">G-town Emergeant</h2>
-            <img src="placeholders/600x400.svg" alt="GTE logo" class="h-auto w-auto mx-auto my-4" />
-            <p class="text-xl text-gray-600 mb-8">Festival d'artiste emergeant</p>
+        <section id="home" class="text-center mb-16">
+            <h2 class="text-5xl font-extrabold text-text-color mb-4">[title]</h2>
+            <img src="placeholders/600x400.svg" alt="logo" class="h-auto w-auto mx-auto my-4" />
+            <div id="event-infos">
+                <p id="event-subtitle" class="text-xl text-text-color mb-8">[subtitle]</p>
+                <p id="event-time" class="text-xl text-text-color mb-8">[time]</p>
+                <p id="event-location" class="text-xl text-text-color mb-8">[location]</p>
+            </div>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d588.6567829155268!2d-75.71693223620657!3d45.42669245534004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05a66e283cb9%3A0x3cd33f0d18b45517!2sPlace%20Laval!5e0!3m2!1sfr!2sca!4v1762119938029!5m2!1sfr!2sca"
+                width="600"
+                height="350"
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                class="mx-auto rounded-lg brightness-[0.8] contrast-[0.9]"
+            >
+            </iframe>
         </section>
 
         <!-- Schedule -->
-        <hr class="my-16 border-t-2 border-gray-200">
+        <hr class="my-16 border-t-2 border-surface">
 
         <section id="program" class="mb-16 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center mb-10">[title]</h2>
+            <h2 class="text-4xl font-bold text-center text-text-color mb-10">[title]</h2>
 
-            <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-xl p-8">
+            <div class="max-w-3xl mx-auto bg-surface rounded-lg shadow-xl p-8">
                 <ul id="program-list" class="space-y-6"></ul>
 
                 <div id="ticket-button"class="mt-10 pt-6 border-t border-gray-200 text-center">
@@ -69,15 +84,15 @@
         </section>
 
         <!-- Artists -->
-        <hr class="my-16 border-t-2 border-gray-200">
+        <hr class="my-16 border-t-2 border-surface">
 
         <section id="artists" class="mb-16 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center mb-10"> Nos Artistes</h2>
+            <h2 class="text-4xl font-bold text-center mb-10">[title]</h2>
             <div id="artists-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </section>
 
         <!-- Past Event -->
-        <hr class="my-16 border-t-2 border-gray-200">
+        <hr class="my-16 border-t-2 border-surface">
 
         <section id="past-events" class="mb-16 scroll-mt-20">
             <h2 class="text-4xl font-bold text-center mb-10">[title]</h2>
@@ -85,18 +100,18 @@
         </section>
 
         <!-- Partners -->
-        <hr class="my-16 border-t-2 border-gray-200">
+        <hr class="my-16 border-t-2 border-surface">
 
         <section id="partners" class="mb-16 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center mb-10">Nos Partnenaires</h2>
+            <h2 class="text-4xl font-bold text-center mb-10">[title]</h2>
             <div id="main-partners" class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12"></div>
 
-            <h3 class="text-2xl font-semibold text-center text-gray-700 mb-6">Avec le support de</h3>
+            <h3 class="text-2xl font-semibold text-center text-gray-700 mb-6">[subtitle]</h3>
             <div id="support-partners" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4"></div>
         </section>
 
         <!-- ABOUT -->
-        <hr class="my-16 border-t-2 border-gray-200">
+        <hr class="my-16 border-t-2 border-surface">
 
         <section id="about" class="mb-16 scroll-mt-20">
             <h2 class="text-4xl font-bold text-center mb-6">title</h2>
@@ -120,11 +135,56 @@
 
     <footer class="bg-gray-800 text-gray-300 mt-16">
         <div class="container mx-auto px-6 py-8 text-center">
-            <p>&copy; 2025 Annual Tech & Design Summit.</p>
+            <p>&copy; 2025 G-Town Emergeant.</p>
         </div>
     </footer>
     
     <!-- Json EXTRACTION section -->
+
+    <!-- Section Header -->
+    <script>
+        fetch('data/header.json')
+        .then(res => res.json())
+        .then(header => {
+            // Logo
+            const logo = document.querySelector('header img');
+            if (logo) logo.src = header.logo;
+
+            // Title
+            const title = document.querySelector('header h1');
+            if (title) title.textContent = header.title;
+
+            // Links
+            const navContainer = document.querySelector('header nav div.flex.space-x-6');
+            if (navContainer) {
+            navContainer.innerHTML = ''; // clear old links
+            header.links.forEach(link => {
+                const a = document.createElement('a');
+                a.href = link.target;
+                a.textContent = link.label;
+                a.className = 'text-gray-600 hover:text-blue-600 transition';
+                navContainer.appendChild(a);
+            });
+            }
+        })
+        .catch(err => console.error('Failed to load header:', err));
+    </script>
+
+    <!-- Section home -->
+    <script>
+    fetch('data/home.json')
+        .then(res => res.json())
+        .then(data => {
+            document.querySelector('#home h2').textContent = data.title
+            document.querySelector('#home img').src = data.logo
+
+            document.getElementById('event-subtitle').textContent = data.subtitle;
+            document.getElementById('event-time').textContent = data.time;
+            document.getElementById('event-location').textContent = data.location;
+
+        })
+        .catch(err => console.error('Failed to load program:', err));
+    </script>
 
     <!-- Section programmation -->
     <script>
@@ -165,9 +225,10 @@
     <script>
         fetch('data/artists.json')
         .then(res => res.json())
-        .then(artists => {
+        .then(data => {
+            document.querySelector('#artists h2').textContent = data.title
             const container = document.getElementById('artists-container');
-            artists.forEach(a => {
+            data.artists.forEach(a => {
             const card = document.createElement('div');
             card.className = 'bg-white rounded-lg shadow-xl overflow-hidden';
             card.innerHTML = `
@@ -188,6 +249,10 @@
         fetch('data/partners.json')
         .then(res => res.json())
         .then(data => {
+
+            document.querySelector('#partners h2').textContent = data.title
+            document.querySelector('#partners h3                             ').textContent = data.subtitle
+
             const mainContainer = document.getElementById('main-partners');
             const supportContainer = document.getElementById('support-partners');
 
@@ -228,35 +293,6 @@
             });
         })
         .catch(err => console.error('Failed to load past events:', err));
-    </script>
-
-    <!-- Section Header -->
-    <script>
-        fetch('data/header.json')
-        .then(res => res.json())
-        .then(header => {
-            // Logo
-            const logo = document.querySelector('header img');
-            if (logo) logo.src = header.logo;
-
-            // Title
-            const title = document.querySelector('header h1');
-            if (title) title.textContent = header.title;
-
-            // Links
-            const navContainer = document.querySelector('header nav div.flex.space-x-6');
-            if (navContainer) {
-            navContainer.innerHTML = ''; // clear old links
-            header.links.forEach(link => {
-                const a = document.createElement('a');
-                a.href = link.target;
-                a.textContent = link.label;
-                a.className = 'text-gray-600 hover:text-blue-600 transition';
-                navContainer.appendChild(a);
-            });
-            }
-        })
-        .catch(err => console.error('Failed to load header:', err));
     </script>
     
     <!-- Section À propos -->

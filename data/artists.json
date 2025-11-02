@@ -1,22 +1,26 @@
-[
-  {
-    "name": "Jane Doe",
-    "photo": "placeholders/400x300.svg",
-    "description": "World-renowned designer focused on human-centered AI and digital ethics."
-  },
-  {
-    "name": "John Smith",
-    "photo": "placeholders/400x300.svg",
-    "description": "Principal engineer specializing in large-scale distributed systems."
-  },
-  {
-    "name": "Emily White",
-    "photo": "placeholders/400x300.svg",
-    "description": "Interactive artist blending technology and natural environments."
-  },
-  {
-    "name": "Emily White",
-    "photo": "placeholders/400x300.svg",
-    "description": "Interactive artist blending technology and natural environments."
-  }
-]
+{
+    "title" : "Nos Artistes",
+    "artists" : [
+    {
+        "name": "Jane Doe",
+        "photo": "placeholders/400x300.svg",
+        "description": "World-renowned designer focused on human-centered AI and digital ethics."
+    },
+    {
+        "name": "John Smith",
+        "photo": "placeholders/400x300.svg",
+        "description": "Principal engineer specializing in large-scale distributed systems."
+    },
+    {
+        "name": "Emily White",
+        "photo": "placeholders/400x300.svg",
+        "description": "Interactive artist blending technology and natural environments."
+    },
+    {
+        "name": "Emily White",
+        "photo": "placeholders/400x300.svg",
+        "description": "Interactive artist blending technology and natural environments."
+    }
+    ]
+}
+
