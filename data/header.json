@@ -1,0 +1,10 @@
+{
+  "logo": "images/logo.jpg",
+  "title": "G-Town Emergeant",
+  "links": [
+    { "label": "Programmation", "target": "#program" },
+    { "label": "Artistes", "target": "#artists" },
+    { "label": "Partnenaires", "target": "#partners" },
+    { "label": "À propos", "target": "#about" }
+  ]
+}
