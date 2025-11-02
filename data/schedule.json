@@ -1,0 +1,32 @@
+[
+  {
+    "time": "9:00 AM",
+    "title": "Doors Open & Morning Coffee",
+    "description": "Networking session",
+    "highlight": true
+  },
+  {
+    "time": "10:00 AM",
+    "title": "Jane Doe",
+    "description": "Keynote: The Future of Design",
+    "highlight": true
+  },
+  {
+    "time": "11:00 AM",
+    "title": "John Smith",
+    "description": "Talk: AI in Modern Tech Stacks",
+    "highlight": true
+  },
+  {
+    "time": "12:00 PM",
+    "title": "Lunch Break",
+    "description": "Catered lunch provided",
+    "highlight": false
+  },
+  {
+    "time": "1:00 PM",
+    "title": "Emily White",
+    "description": "Workshop: Interactive Prototyping",
+    "highlight": true
+  }
+]
