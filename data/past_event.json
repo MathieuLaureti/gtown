@@ -1,15 +1,15 @@
 {
   "title": "Événement Précédent",
   "photos": [
-    { "src": "placeholders/512x512.svg", "alt": "Soirée 2023 - scène principale" },
-    { "src": "placeholders/512x512.svg", "alt": "Public en salle" },
-    { "src": "placeholders/512x512.svg", "alt": "Artistes sur scène" },
-    { "src": "placeholders/512x512.svg", "alt": "Artistes sur scène" },
-    { "src": "placeholders/512x512.svg", "alt": "Artistes sur scène" },
-    { "src": "placeholders/512x512.svg", "alt": "Artistes sur scène" },
-    { "src": "placeholders/512x512.svg", "alt": "Artistes sur scène" },
-    { "src": "placeholders/512x512.svg", "alt": "Artistes sur scène" },
-    { "src": "placeholders/512x512.svg", "alt": "Artistes sur scène" },
-    { "src": "placeholders/512x512.svg", "alt": "After party" }
+    { "src": "https://placehold.co/512x512/272a34/d6d9e0.svg", "alt": "Soirée 2023 - scène principale" },
+    { "src": "https://placehold.co/512x512/272a34/d6d9e0.svg", "alt": "Public en salle" },
+    { "src": "https://placehold.co/512x512/272a34/d6d9e0.svg", "alt": "Artistes sur scène" },
+    { "src": "https://placehold.co/512x512/272a34/d6d9e0.svg", "alt": "Artistes sur scène" },
+    { "src": "https://placehold.co/512x512/272a34/d6d9e0.svg", "alt": "Artistes sur scène" },
+    { "src": "https://placehold.co/512x512/272a34/d6d9e0.svg", "alt": "Artistes sur scène" },
+    { "src": "https://placehold.co/512x512/272a34/d6d9e0.svg", "alt": "Artistes sur scène" },
+    { "src": "https://placehold.co/512x512/272a34/d6d9e0.svg", "alt": "Artistes sur scène" },
+    { "src": "https://placehold.co/512x512/272a34/d6d9e0.svg", "alt": "Artistes sur scène" },
+    { "src": "https://placehold.co/512x512/272a34/d6d9e0.svg", "alt": "After party" }
   ]
 }

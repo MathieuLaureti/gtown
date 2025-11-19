@@ -1,12 +1,21 @@
 {
-  "title": "G-Town Emergeant",
-  "theme": {
-    "colors": {
-        "primary": "#BFD8F9",
-        "secondary": "#8B7A66",
-        "background": "#0F172A", 
-        "surface": "#1E293B", 
-        "text-color": "#E2E8F0" 
+    "title": "G-Town Emergeant",
+    "theme": {
+        "colors": {
+            "bg-dark": "oklch(0.1 0.025 244)",
+            "bg": "oklch(0.15 0.025 244)",
+            "bg-light": "oklch(0.2 0.025 244)",
+            "text": "oklch(0.96 0.05 244)",
+            "text-muted": "oklch(0.76 0.05 244)",
+            "highlight": "oklch(0.5 0.05 244)",
+            "border": "oklch(0.4 0.05 244)",
+            "border-muted": "oklch(0.3 0.05 244)",
+            "primary": "oklch(0.76 0.1 244)",
+            "secondary": "oklch(0.76 0.1 64)",
+            "danger": "oklch(0.7 0.05 30)",
+            "warning": "oklch(0.7 0.05 100)",
+            "success": "oklch(0.7 0.05 160)",
+            "info": "oklch(0.7 0.05 260)"
+        }
     }
-  }
 }

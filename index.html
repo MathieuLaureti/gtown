@@ -24,99 +24,101 @@
     </script>
 </head>
 
-<body class="bg-background text-text-text-color font-sans">
-
-    <header class="bg-surface shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <img src="images/logo.jpg" alt="GTE logo" class="h-12 w-auto"/>
-                <h1 class="text-2xl font-bold text-text-color">[title]</h1>
-            </div>
-            
-            <div class="flex space-x-6"></div>
-        </nav>
-    </header>
-
-    <main class="container mx-auto px-6 py-12">
-
+<body class="bg-bg-dark text-text-text-color font-sans">
+    <main class="container mx-auto max-w-[1024px] min-w-[600px] px-2">
         <!-- Title + logo section -->
-        <section id="home" class="text-center mb-16">
-            <h2 class="text-5xl font-extrabold text-text-color mb-4">[title]</h2>
-            <img src="placeholders/600x400.svg" alt="logo" class="h-auto w-auto mx-auto my-4" />
-            <div id="event-infos">
-                <p id="event-subtitle" class="text-xl text-text-color mb-8">[subtitle]</p>
-                <p id="event-time" class="text-xl text-text-color mb-8">[time]</p>
-                <p id="event-location" class="text-xl text-text-color mb-8">[location]</p>
-            </div>
-
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d588.6567829155268!2d-75.71693223620657!3d45.42669245534004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05a66e283cb9%3A0x3cd33f0d18b45517!2sPlace%20Laval!5e0!3m2!1sfr!2sca!4v1762119938029!5m2!1sfr!2sca"
-                width="600"
-                height="350"
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"
-                class="mx-auto rounded-lg brightness-[0.8] contrast-[0.9]"
-            >
-            </iframe>
-        </section>
-
-        <!-- Schedule -->
-        <hr class="my-16 border-t-2 border-surface">
-
-        <section id="program" class="mb-16 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center text-text-color mb-10">[title]</h2>
-
-            <div class="max-w-3xl mx-auto bg-surface rounded-lg shadow-xl p-8">
-                <ul id="program-list" class="space-y-6"></ul>
-
-                <div id="ticket-button"class="mt-10 pt-6 border-t border-gray-200 text-center">
-                <a 
-                    href="https://example.com/INVALID_JSON_LINK" 
-                    target="_blank" 
-                    class="inline-block w-full md:w-auto bg-blue-600 text-white text-center font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition duration-200"
+        <section id="home" class="text-center">
+            <img src="placeholders/600x400/272a34/d6d9e0.svg" alt="logo" class="m-auto min-w-[600px] py-8 spx-2" />
+            <div class="
+            bg-bg 
+            max-w-[1024px] 
+            min-w-[600px] 
+            mx-auto 
+            rounded-xl
+            border 
+            border-border-muted 
+            border-t-highlight
+            overflow-hidden
+            bg-gradient-to-br from-bg-light to-bg-dark
+            shadow-xl shadow-border/50
+            ">
+                <div>
+                    <h2 class="text-5xl font-extrabold text-text my-4">[title]</h2>
+                    
+                    <div id="event-infos">
+                        <p id="event-subtitle" class="text-xl text-text mb-2">[subtitle]</p>
+                        <p id="event-time" class="text-l text-text-muted mb">[time]</p>
+                        <p id="event-location" class="text-l text-text-muted mb-8">[location]</p>
+                    </div>
+                </div>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d588.6567829155268!2d-75.71693223620657!3d45.42669245534004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05a66e283cb9%3A0x3cd33f0d18b45517!2sPlace%20Laval!5e0!3m2!1sfr!2sca!4v1762119938029!5m2!1sfr!2sca"
+                    width="468"
+                    height="350"
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="mx-auto rounded-lg brightness-[0.8] contrast-[0.9] mb-4"
                 >
-                    [button_text]
-                </a>
+                </iframe>
+                <hr class="my-8 border-t-2 w-3/4 mx-auto border-border border-surface">
+                <div id="program">
+                    <h2 class="text-4xl font-bold text-center text-text">[title]</h2>
+
+                    <div class="max-w-3xl mx-auto bg-surface rounded-lg shadow-xl p-8">
+                        <ul id="program-list" class="space-y-4"></ul>
+
+                        <div id="ticket-button" class="pt-8 text-center">
+                            <a 
+                                href="https://example.com/INVALID_JSON_LINK" 
+                                target="_blank" 
+                                class="inline-block w-auto bg-primary text-white text-center font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-secondary transition duration-200"
+                            >
+                                [button_text]
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Artists -->
-        <hr class="my-16 border-t-2 border-surface">
-
-        <section id="artists" class="mb-16 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center mb-10">[title]</h2>
-            <div id="artists-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        <section id="artists" class="">
+            <h2 class="text-4xl font-bold text-center text-text my-8 py-2 bg-bg border border-border-muted rounded-xl
+                border-t-highlight
+                overflow-hidden
+                bg-gradient-to-br from-bg-light to-bg
+                shadow-xl shadow-border/50
+            ">[title]</h2>
+            <div id="artists-container" class="grid grid-cols-2 md:grid-cols-3 gap-8"></div>
         </section>
 
         <!-- Past Event -->
-        <hr class="my-16 border-t-2 border-surface">
-
-        <section id="past-events" class="mb-16 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center mb-10">[title]</h2>
+        <section id="past-events" class="">
+            <h2 class="text-4xl font-bold text-center text-text my-8 py-2 bg-bg border border-border-muted rounded-xl
+                border-t-highlight
+                overflow-hidden
+                bg-gradient-to-br from-bg-light to-bg
+                shadow-xl shadow-border/50           
+            ">[title]</h2>
             <div id="past-events-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"></div>
         </section>
 
         <!-- Partners -->
-        <hr class="my-16 border-t-2 border-surface">
-
         <section id="partners" class="mb-16 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center mb-10">[title]</h2>
-            <div id="main-partners" class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12"></div>
+            <h2 class="text-4xl font-bold text-center text-text my-8 py-2">[title]</h2>
+            <div id="main-partners" class="grid grid-cols-1 gap-8 mb-12"></div>
 
-            <h3 class="text-2xl font-semibold text-center text-gray-700 mb-6">[subtitle]</h3>
+            <h3 class="text-2xl font-semibold text-center text-text-muted text-gray-700 mb-6">[subtitle]</h3>
             <div id="support-partners" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4"></div>
         </section>
 
         <!-- ABOUT -->
-        <hr class="my-16 border-t-2 border-surface">
-
         <section id="about" class="mb-16 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center mb-6">title</h2>
+            <h2 class="text-4xl font-bold text-center text-text my-8 py-2">[title]</h2>
 
-            <div class="max-w-5xl mx-auto bg-white rounded-lg shadow-md grid grid-cols-1 md:grid-cols-2">
+            <div class="max-w-5xl mx-auto bg-bg rounded-lg shadow-md grid grid-cols-1 md:grid-cols-2">
                 <!-- image -->
                 <div class="overflow-hidden rounded-l-lg">
                     <img src="" alt="About section image" class="w-full h-full object-cover">
@@ -124,53 +126,17 @@
                 <!-- text -->
                 <div class="p-6 flex flex-col justify-center">
                 <div class="prose prose-lg max-w-none text-gray-700">
-                    <p>paragraph 1</p>
-                    <p>paragraph 2</p>
+                    <p>[paragraph1]</p>
+                    <p>[paragraph2]</p>
                 </div>
                 </div>
             </div>
         </section>
-        
     </main>
-
-    <footer class="bg-gray-800 text-gray-300 mt-16">
-        <div class="container mx-auto px-6 py-8 text-center">
-            <p>&copy; 2025 G-Town Emergeant.</p>
-        </div>
-    </footer>
     
     <!-- Json EXTRACTION section -->
 
-    <!-- Section Header -->
-    <script>
-        fetch('data/header.json')
-        .then(res => res.json())
-        .then(header => {
-            // Logo
-            const logo = document.querySelector('header img');
-            if (logo) logo.src = header.logo;
-
-            // Title
-            const title = document.querySelector('header h1');
-            if (title) title.textContent = header.title;
-
-            // Links
-            const navContainer = document.querySelector('header nav div.flex.space-x-6');
-            if (navContainer) {
-            navContainer.innerHTML = ''; // clear old links
-            header.links.forEach(link => {
-                const a = document.createElement('a');
-                a.href = link.target;
-                a.textContent = link.label;
-                a.className = 'text-gray-600 hover:text-blue-600 transition';
-                navContainer.appendChild(a);
-            });
-            }
-        })
-        .catch(err => console.error('Failed to load header:', err));
-    </script>
-
-    <!-- Section home -->
+    <!-- home.json -> home <section> -->
     <script>
     fetch('data/home.json')
         .then(res => res.json())
@@ -186,42 +152,39 @@
         .catch(err => console.error('Failed to load program:', err));
     </script>
 
-    <!-- Section programmation -->
+    <!-- artists.json -> program <section> -->
     <script>
-    fetch('data/schedule.json')
+    fetch('data/artists.json')
         .then(res => res.json())
         .then(items => {
 
-            document.querySelector('#program h2').textContent = items.title
+            document.querySelector('#program h2').textContent = items.title_schedule
 
             const ticket_button = document.querySelector('#ticket-button a')
 
-            ticket_button.textContent = items.button_text
-            ticket_button.href = items.button_link
+            ticket_button.textContent = items.shop_button_text
+            ticket_button.href = items.shop_link
 
             const list = document.getElementById('program-list');
-            items.schedule.forEach(item => {
-            const li = document.createElement('li');
-            li.className = 'flex items-center space-x-6';
-            
-            const borderColor = item.highlight ? 'border-blue-600' : 'border-gray-300';
-            const textColor = item.highlight ? 'text-blue-600' : 'text-gray-600';
-            
-            li.innerHTML = `
-                <span class="text-lg font-semibold ${textColor} w-32">${item.time}</span>
-                <div class="border-l-4 ${borderColor} pl-4">
-                <h3 class="text-xl font-semibold">${item.title}</h3>
-                <p class="text-gray-600">${item.description}</p>
-                </div>
-            `;
-            
-            list.appendChild(li);
+            items.artists.forEach(item => {
+                const li = document.createElement('li');
+                li.className = 'flex items-center rounded-xl p-2 bg-bg-light';
+                const id = `schedule-${items.name}`
+                li.id = id
+                li.innerHTML = `
+                    <span class="text-lg font-semibold text-text w-32 text-center">${item.time}</span>
+                    <div class="w-full">
+                        <button href="#${item.name}" class="text-xl font-semibold text-text px-2 rounded mx-auto">${item.name}</button>
+                    </div>
+                `;
+                
+                list.appendChild(li);
             });
         })
         .catch(err => console.error('Failed to load program:', err));
     </script>
 
-    <!-- Section Nos Artistes -->
+    <!-- artists.json -> artists <section> -->
     <script>
         fetch('data/artists.json')
         .then(res => res.json())
@@ -230,12 +193,17 @@
             const container = document.getElementById('artists-container');
             data.artists.forEach(a => {
             const card = document.createElement('div');
-            card.className = 'bg-white rounded-lg shadow-xl overflow-hidden';
+            card.className = `bg-bg rounded-lg shadow-xl border 
+            border-border-muted 
+            border-t-highlight
+            overflow-hidden
+            bg-gradient-to-br from-bg-light to-bg-dark
+            shadow-xl shadow-border/50`;
             card.innerHTML = `
-                <img src="${a.photo}" alt="${a.name}" class="w-full h-56 object-cover">
+                <img src="${a.photo}" alt="${a.name}" class="w-full h-auto object-cover">
                 <div class="p-6">
-                <h3 class="text-2xl font-semibold mb-2">${a.name}</h3>
-                <p class="text-gray-600">${a.description}</p>
+                <h3 class="text-2xl font-semibold text-text mb-2">${a.name}</h3>
+                <p class="text-text-muted">${a.description}</p>
                 </div>
             `;
             container.appendChild(card);
@@ -243,41 +211,8 @@
         })
         .catch(err => console.error('Failed to load artists:', err));
     </script>
-    
-    <!-- Section Nos Partenaires -->
-    <script>
-        fetch('data/partners.json')
-        .then(res => res.json())
-        .then(data => {
 
-            document.querySelector('#partners h2').textContent = data.title
-            document.querySelector('#partners h3                             ').textContent = data.subtitle
-
-            const mainContainer = document.getElementById('main-partners');
-            const supportContainer = document.getElementById('support-partners');
-
-            data.main.forEach(p => {
-            const card = document.createElement('div');
-            card.className = 'bg-white h-40 rounded-lg shadow-lg flex items-center justify-center p-6';
-            card.innerHTML = `
-                <img src="${p.logo}" alt="${p.name} Logo" class="max-h-24">
-            `;
-            mainContainer.appendChild(card);
-            });
-
-            data.support.forEach(p => {
-            const card = document.createElement('div');
-            card.className = 'bg-white h-24 rounded-lg shadow-md flex items-center justify-center p-4';
-            card.innerHTML = `
-                <img src="${p.logo}" alt="${p.name} Logo" class="max-h-12">
-            `;
-            supportContainer.appendChild(card);
-            });
-        })
-        .catch(err => console.error('Failed to load partners:', err));
-    </script>
-
-    <!-- Section Évènement Précédent -->
+    <!-- Past_event.json -> "past-events" <section> -->
     <script>
         fetch('data/past_event.json')
         .then(res => res.json())
@@ -288,14 +223,57 @@
             const img = document.createElement('img');
             img.src = photo.src;
             img.alt = photo.alt;
-            img.className = 'w-full h-48 object-cover rounded-lg shadow-md';
+            img.className = 'w-full h-auto object-cover rounded-lg shadow-md';
             container.appendChild(img);
             });
         })
         .catch(err => console.error('Failed to load past events:', err));
     </script>
     
-    <!-- Section À propos -->
+    <!-- partners.json -> partners <section> -->
+    <script>
+        fetch('data/partners.json')
+        .then(res => res.json())
+        .then(data => {
+
+            document.querySelector('#partners h2').textContent = data.title
+            document.querySelector('#partners h3').textContent = data.subtitle
+
+            const mainContainer = document.getElementById('main-partners');
+            const supportContainer = document.getElementById('support-partners');
+
+            data.main.forEach(p => {
+                const card = document.createElement('div');
+                card.className = `bg-bg h-64 w-auto rounded-lg shadow-lg flex items-center justify-center p-6 border border-border-muted rounded-xl
+                    border-t-highlight
+                    overflow-hidden
+                    bg-gradient-to-br from-bg-light to-bg-dark
+                    shadow-xl shadow-border/50  
+                `;
+                card.innerHTML = `
+                    <img src="${p.logo}" alt="${p.name} Logo" class="h-auto">
+                `;
+                mainContainer.appendChild(card);
+            });
+
+            data.support.forEach(p => {
+                const card = document.createElement('div');
+                card.className = `bg-bg h-24 rounded-lg shadow-md flex items-center justify-center p-4 border border-border-muted rounded-xl
+                    border-t-highlight
+                    overflow-hidden
+                    bg-gradient-to-br from-bg-light to-bg
+                    shadow-xl shadow-border/50
+                `;
+                card.innerHTML = `
+                    <img src="${p.logo}" alt="${p.name} Logo" class="max-h-12">
+                `;
+                supportContainer.appendChild(card);
+            });
+        })
+        .catch(err => console.error('Failed to load partners:', err));
+    </script>
+
+    <!-- about.json -> "about" <section> -->
     <script>
         fetch('data/about.json')
         .then(res => res.json())

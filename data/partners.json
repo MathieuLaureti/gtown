@@ -1,44 +1,36 @@
 {
-    "title": "Nos Partenaires",
+    "title": "Association",
     "subtitle": "Avec le soutient de",
     "main": [
         {
         "name": "Main Partner 1",
-        "logo": "placeholders/200x100.svg"
-        },
-        {
-        "name": "Main Partner 2",
-        "logo": "placeholders/200x100.svg"
-        },
-        {
-        "name": "Main Partner 3",
-        "logo": "placeholders/200x100.svg"
+        "logo": "https://placehold.co/400x200/272a34/d6d9e0/svg"
         }
     ],
     "support": [
         {
         "name": "Partner A",
-        "logo": "placeholders/150x80.svg"
+        "logo": "https://placehold.co/150x80/272a34/d6d9e0.svg"
         },
         {
         "name": "Partner B",
-        "logo": "placeholders/150x80.svg"
+        "logo": "https://placehold.co/150x80/272a34/d6d9e0.svg"
         },
         {
         "name": "Partner C",
-        "logo": "placeholders/150x80.svg"
+        "logo": "https://placehold.co/150x80/272a34/d6d9e0.svg"
         },
         {
         "name": "Partner D",
-        "logo": "placeholders/150x80.svg"
+        "logo": "https://placehold.co/150x80/272a34/d6d9e0.svg"
         },
         {
         "name": "Partner E",
-        "logo": "placeholders/150x80.svg"
+        "logo": "https://placehold.co/150x80/272a34/d6d9e0.svg"
         },
         {
         "name": "Partner F",
-        "logo": "placeholders/150x80.svg"
+        "logo": "https://placehold.co/150x80/272a34/d6d9e0.svg"
         }
     ]
 }
