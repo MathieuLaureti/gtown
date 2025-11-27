@@ -24,111 +24,82 @@
     </script>
 </head>
 
-<body class="bg-bg-dark text-text-text-color font-sans">
-    <main class="container mx-auto max-w-[1024px] min-w-[600px] px-2">
+<body class=" text-text font-sans">
+    <main >
         <!-- Title + logo section -->
-        <section id="home" class="text-center">
-            <img src="placeholders/600x400/272a34/d6d9e0.svg" alt="logo" class="m-auto min-w-[600px] py-8 spx-2" />
-            <div class="
-            bg-bg 
-            max-w-[1024px] 
-            min-w-[600px] 
-            mx-auto 
-            rounded-xl
-            border 
-            border-border-muted 
-            border-t-highlight
-            overflow-hidden
-            bg-gradient-to-br from-bg-light to-bg-dark
-            shadow-xl shadow-border/50
-            ">
-                <div>
-                    <h2 class="text-5xl font-extrabold text-text my-4">[title]</h2>
-                    
-                    <div id="event-infos">
-                        <p id="event-subtitle" class="text-xl text-text mb-2">[subtitle]</p>
-                        <p id="event-time" class="text-l text-text-muted mb">[time]</p>
-                        <p id="event-location" class="text-l text-text-muted mb-8">[location]</p>
+        <section id="home" class="text-center mx-auto bg-first pb-16">
+            <div class="max-w-[1000px] mx-auto">
+                <img src="http://placeholders/600x400/272a34/d6d9e0.svg" alt="logo" class="m-auto w-auto py-8 spx-2" />
+                <div class="mx-auto rounded-xl pt-8">
+                    <h1 id="event-subtitle" class="text-5xl italic font-extrabold pb-8 text-text">[subtitle]</h1>
+                    <h2 id="event-date" class="text-3xl italic font-extrabold py-8 text-text">[date]</h1>
+                    <div class="flex mx-auto justify-center space-x-4 py-8">
+                        <a href="#" class="transition-transform duration-200 hover:scale-90">
+                            <img src="images/facebook.svg" alt="facebook" class="h-12 w-12"/>
+                        </a>
+                        <a href="#" class="transition-transform duration-200 hover:scale-90">
+                            <img src="images/instagram.svg" alt="instagram" class="h-12 w-12"/>
+                        </a>
+                        <a href="#" class="transition-transform duration-200 hover:scale-90">
+                            <img src="images/tickets.png" alt="tickets_icon" class="h-12 w-12"/>
+                        </a>
                     </div>
-                </div>
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d588.6567829155268!2d-75.71693223620657!3d45.42669245534004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05a66e283cb9%3A0x3cd33f0d18b45517!2sPlace%20Laval!5e0!3m2!1sfr!2sca!4v1762119938029!5m2!1sfr!2sca"
-                    width="468"
-                    height="350"
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"
-                    class="mx-auto rounded-lg brightness-[0.8] contrast-[0.9] mb-4"
-                >
-                </iframe>
-                <hr class="my-8 border-t-2 w-3/4 mx-auto border-border border-surface">
-                <div id="program">
-                    <h2 class="text-4xl font-bold text-center text-text">[title]</h2>
-
-                    <div class="max-w-3xl mx-auto bg-surface rounded-lg shadow-xl p-8">
-                        <ul id="program-list" class="space-y-4"></ul>
-
-                        <div id="ticket-button" class="pt-8 text-center">
-                            <a 
-                                href="https://example.com/INVALID_JSON_LINK" 
-                                target="_blank" 
-                                class="inline-block w-auto bg-primary text-white text-center font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-secondary transition duration-200"
-                            >
-                                [button_text]
-                            </a>
-                        </div>
+                    <div class="bg-second max-w-3xl h-auto rounded-2xl shadow-[-3px_-3px_0_#142040] pb-8 mx-4 w-auto md:mx-auto">
+                        <h1 class="text-5xl pt-2 pb-4 text-text2 font-extrabold">Lieu</h1>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d588.6567829155268!2d-75.71693223620657!3d45.42669245534004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05a66e283cb9%3A0x3cd33f0d18b45517!2sPlace%20Laval!5e0!3m2!1sfr!2sca!4v1762119938029!5m2!1sfr!2sca"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="mx-auto rounded-lg brightness-[0.8] contrast-[0.9] max-w-96 mx-auto"
+                        >
+                        </iframe>
                     </div>
+                    <img src="https://placehold.co/600x800/272a34/d6d9e0/svg?text=Affiche des artistes\n600x800" alt="programmation" class="m-auto w-auto pt-16 spx-2" />
                 </div>
             </div>
         </section>
-
         <!-- Artists -->
-        <section id="artists" class="">
-            <h2 class="text-4xl font-bold text-center text-text my-8 py-2 bg-bg border border-border-muted rounded-xl
-                border-t-highlight
-                overflow-hidden
-                bg-gradient-to-br from-bg-light to-bg
-                shadow-xl shadow-border/50
-            ">[title]</h2>
-            <div id="artists-container" class="grid grid-cols-2 md:grid-cols-3 gap-8"></div>
+        <section id="artists" class="bg-third">
+            <div class="max-w-[1000px] mx-auto py-8">
+                <h2 class="text-4xl font-extrabold text-center text-text w-64 py-8 mx-auto">[title]</h2>
+                <div id="artists-container" class="grid grid-cols-2 md:grid-cols-3 gap-8"></div>
+            </div>
         </section>
 
         <!-- Past Event -->
-        <section id="past-events" class="">
-            <h2 class="text-4xl font-bold text-center text-text my-8 py-2 bg-bg border border-border-muted rounded-xl
-                border-t-highlight
-                overflow-hidden
-                bg-gradient-to-br from-bg-light to-bg
-                shadow-xl shadow-border/50           
-            ">[title]</h2>
-            <div id="past-events-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"></div>
+        <section id="past-events" class="bg-third">
+            <div class="max-w-[1000px] mx-auto pb-16">
+                <h2 class="text-4xl font-extrabold text-center text-text py-8 mx-auto">[title]</h2>
+                <div id="past-events-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"></div>
+            </div>
         </section>
 
         <!-- Partners -->
-        <section id="partners" class="mb-16 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center text-text my-8 py-2">[title]</h2>
-            <div id="main-partners" class="grid grid-cols-1 gap-8 mb-12"></div>
-
-            <h3 class="text-2xl font-semibold text-center text-text-muted text-gray-700 mb-6">[subtitle]</h3>
-            <div id="support-partners" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4"></div>
+        <section id="partners" class="bg-third">
+            <div class="max-w-[1000px] mx-auto pb-8">
+                <h3 class="text-4xl font-extrabold text-center text-text mx-auto">[title]</h3>
+                <div id="support-partners" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 py-8"></div>
+            </div>
+            
         </section>
 
         <!-- ABOUT -->
-        <section id="about" class="mb-16 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center text-text my-8 py-2">[title]</h2>
+        <section id="about" class="bg-first">
+            <h2 class="text-4xl font-extrabold text-center text-text pt-16 pb-8">[title]</h2>
 
-            <div class="max-w-5xl mx-auto bg-bg rounded-lg shadow-md grid grid-cols-1 md:grid-cols-2">
+            <div class="max-w-5xl mx-auto bg-second rounded-3xl shadow-[-3px_-3px_0_#142040] grid grid-cols-1 md:grid-cols-2">
                 <!-- image -->
-                <div class="overflow-hidden rounded-l-lg">
+                <div class="overflow-hidden rounded-l-3xl">
                     <img src="" alt="About section image" class="w-full h-full object-cover">
                 </div>
                 <!-- text -->
                 <div class="p-6 flex flex-col justify-center">
-                <div class="prose prose-lg max-w-none text-gray-700">
-                    <p>[paragraph1]</p>
-                    <p>[paragraph2]</p>
-                </div>
+                    <div class="prose prose-lg max-w-none text-gray-700">
+                        <p>[paragraph1]</p>
+                        <p>[paragraph2]</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -141,45 +112,13 @@
     fetch('data/home.json')
         .then(res => res.json())
         .then(data => {
-            document.querySelector('#home h2').textContent = data.title
+            document.querySelector('#home h1').textContent = data.title
             document.querySelector('#home img').src = data.logo
 
             document.getElementById('event-subtitle').textContent = data.subtitle;
-            document.getElementById('event-time').textContent = data.time;
+            document.getElementById('event-date').textContent = data.time;
             document.getElementById('event-location').textContent = data.location;
 
-        })
-        .catch(err => console.error('Failed to load program:', err));
-    </script>
-
-    <!-- artists.json -> program <section> -->
-    <script>
-    fetch('data/artists.json')
-        .then(res => res.json())
-        .then(items => {
-
-            document.querySelector('#program h2').textContent = items.title_schedule
-
-            const ticket_button = document.querySelector('#ticket-button a')
-
-            ticket_button.textContent = items.shop_button_text
-            ticket_button.href = items.shop_link
-
-            const list = document.getElementById('program-list');
-            items.artists.forEach(item => {
-                const li = document.createElement('li');
-                li.className = 'flex items-center rounded-xl p-2 bg-bg-light';
-                const id = `schedule-${items.name}`
-                li.id = id
-                li.innerHTML = `
-                    <span class="text-lg font-semibold text-text w-32 text-center">${item.time}</span>
-                    <div class="w-full">
-                        <button href="#${item.name}" class="text-xl font-semibold text-text px-2 rounded mx-auto">${item.name}</button>
-                    </div>
-                `;
-                
-                list.appendChild(li);
-            });
         })
         .catch(err => console.error('Failed to load program:', err));
     </script>
@@ -193,12 +132,9 @@
             const container = document.getElementById('artists-container');
             data.artists.forEach(a => {
             const card = document.createElement('div');
-            card.className = `bg-bg rounded-lg shadow-xl border 
-            border-border-muted 
-            border-t-highlight
+            card.className = `bg-first rounded-lg 
             overflow-hidden
-            bg-gradient-to-br from-bg-light to-bg-dark
-            shadow-xl shadow-border/50`;
+            `;
             card.innerHTML = `
                 <img src="${a.photo}" alt="${a.name}" class="w-full h-auto object-cover">
                 <div class="p-6">
@@ -235,26 +171,9 @@
         fetch('data/partners.json')
         .then(res => res.json())
         .then(data => {
-
-            document.querySelector('#partners h2').textContent = data.title
             document.querySelector('#partners h3').textContent = data.subtitle
 
-            const mainContainer = document.getElementById('main-partners');
             const supportContainer = document.getElementById('support-partners');
-
-            data.main.forEach(p => {
-                const card = document.createElement('div');
-                card.className = `bg-bg h-64 w-auto rounded-lg shadow-lg flex items-center justify-center p-6 border border-border-muted rounded-xl
-                    border-t-highlight
-                    overflow-hidden
-                    bg-gradient-to-br from-bg-light to-bg-dark
-                    shadow-xl shadow-border/50  
-                `;
-                card.innerHTML = `
-                    <img src="${p.logo}" alt="${p.name} Logo" class="h-auto">
-                `;
-                mainContainer.appendChild(card);
-            });
 
             data.support.forEach(p => {
                 const card = document.createElement('div');

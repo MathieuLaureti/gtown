@@ -2,20 +2,17 @@
     "title": "G-Town Emergeant",
     "theme": {
         "colors": {
-            "bg-dark": "oklch(0.1 0.025 244)",
-            "bg": "oklch(0.15 0.025 244)",
-            "bg-light": "oklch(0.2 0.025 244)",
-            "text": "oklch(0.96 0.05 244)",
-            "text-muted": "oklch(0.76 0.05 244)",
+            "first": "hsl(230, 43, 64)",
+            "second": "hsl(28, 73, 68)",
+            "third": "#142040",
+            "fourth": "#b9a1bf",
+            "text": "#ffffff",
+            "text2": "#142040",
             "highlight": "oklch(0.5 0.05 244)",
-            "border": "oklch(0.4 0.05 244)",
             "border-muted": "oklch(0.3 0.05 244)",
             "primary": "oklch(0.76 0.1 244)",
-            "secondary": "oklch(0.76 0.1 64)",
-            "danger": "oklch(0.7 0.05 30)",
-            "warning": "oklch(0.7 0.05 100)",
-            "success": "oklch(0.7 0.05 160)",
-            "info": "oklch(0.7 0.05 260)"
+            "secondary": "oklch(0.76 0.1 64)"
+            
         }
     }
 }
