@@ -133,14 +133,30 @@
             const container = document.getElementById('artists-container');
             data.artists.forEach(a => {
             const card = document.createElement('div');
-            card.className = `bg-fifth rounded-lg 
-            overflow-hidden
+            // 1. Add 'relative' and 'group' to the parent container
+            card.className = `
+                relative 
+                rounded-lg 
+                overflow-hidden 
+                group 
+                transition-transform duration-300 hover:scale-105
+                cursor-pointer
             `;
+
+            // 2. Position the title absolutely at the bottom
+            // 3. Set opacity to 0 (hidden) and group-hover:opacity to 100 (visible)
             card.innerHTML = `
-                <img src="${a.photo}" alt="${a.name}" class="w-full h-auto object-cover">
-                <div class="p-6">
-                <h3 class="text-2xl font-semibold text-text mb-2">${a.name}</h3>
-                <p class="text-text-muted">${a.description}</p>
+                <img src="${a.photo}" alt="${a.name}" class="w-full h-auto object-cover align-middle">
+                
+                <div class="
+                    absolute bottom-0 left-0 w-full
+                    bg-fifth/30 
+                    backdrop-blur-[2px]
+                    p-2 text-center
+                    opacity-0 group-hover:opacity-50
+                    transition-opacity duration-300
+                ">
+                    <h3 class="text-xl font-extrabold text-text">${a.name}</h3>
                 </div>
             `;
             container.appendChild(card);
