@@ -56,7 +56,10 @@
                         >
                         </iframe>
                     </div>
-                    <img src="https://placehold.co/600x800/272a34/d6d9e0/svg?text=Affiche des artistes\n600x800" alt="programmation" class="m-auto w-auto pt-16 spx-2" />
+                    <div>
+                        <img src="https://placehold.co/600x800/272a34/d6d9e0/svg?text=Affiche des artistes\n600x800" alt="programmation" class="m-auto w-auto pt-16 spx-2" />
+                        <h1 class="text-6xl italic font-extrabold py-8 text-third">paragraphe</h1>
+                    </div>
                 </div>
             </div>
         </section>
@@ -133,14 +136,8 @@
             const container = document.getElementById('artists-container');
             data.artists.forEach(a => {
             const card = document.createElement('div');
-            // 1. Add 'relative' and 'group' to the parent container
-            card.className = `
-                relative 
-                rounded-lg 
-                overflow-hidden 
-                group 
-                transition-transform duration-300 hover:scale-105
-                cursor-pointer
+            card.className = `bg-first rounded-lg 
+            overflow-hidden
             `;
 
             // 2. Position the title absolutely at the bottom
@@ -226,8 +223,5 @@
         })
         .catch(err => console.error('Failed to load about section:', err));
     </script>
-
-
-
 </body>
 </html>
