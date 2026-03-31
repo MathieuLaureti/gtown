@@ -28,11 +28,20 @@
     <main >
         <!-- Title + logo section -->
         <section id="home" class="text-center mx-auto bg-first pb-16">
+          <div class="max-w-[1200px] mx-auto relative">
+            <img src="images/41.png" 
+              class="block absolute left-[-90px] top-[200px] w-[192px] z-0 sm:w-[256px] sm:top-[250px] z-0" 
+              alt="tickets"
+            >
+            <img src="images/46.png" 
+            class="block absolute right-[-100px] top-[50px] h-[512px] sm:h-[768px] sm:right-[-150px] z-0" 
+              alt="droite-3"
+            >
             <div class="max-w-[1000px] mx-auto">
-                <img src="http://placeholders/600x400/272a34/d6d9e0.svg" alt="logo" class="m-auto w-auto py-8 spx-2" />
+                <img id="logo-image" src="http://placeholders/600x400/272a34/d6d9e0.svg" alt="logo" class="m-auto w-auto py-8 px-2 relative z-10" />
                 <div class="mx-auto rounded-xl pt-8">
-                    <h1 id="event-subtitle" class="text-5xl italic font-extrabold pb-8 text-text">[subtitle]</h1>
-                    <h2 id="event-date" class="text-3xl italic font-extrabold py-8 text-text">[date]</h1>
+                    <h1 id="event-subtitle" class="px-16 text-3xl sm:text-5xl sm:px-32 italic font-extrabold pb-8 text-text">[subtitle]</h1>
+                    <h2 id="event-date" class="text-xl sm:text-3xl italic font-extrabold py-8 text-text">[date]</h1>
                     <div class="flex mx-auto justify-center space-x-4 py-8">
                         <a href="#" class="transition-transform duration-200 hover:scale-90">
                             <img src="images/facebook.svg" alt="facebook" class="h-12 w-12"/>
@@ -44,7 +53,7 @@
                             <img src="images/tickets.png" alt="tickets_icon" class="h-12 w-12"/>
                         </a>
                     </div>
-                    <div class="bg-second max-w-3xl h-auto rounded-2xl shadow-[-3px_-3px_0_#142040] pb-8 mx-4 w-auto md:mx-auto">
+                    <div class="bg-second max-w-3xl h-auto rounded-2xl shadow-[-3px_-3px_0_#142040] pb-8 mx-4 w-auto md:mx-auto relative z-10">
                         <h1 class="text-5xl pt-2 pb-4 text-text2 font-extrabold">Lieu</h1>
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d588.6567829155268!2d-75.71693223620657!3d45.42669245534004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05a66e283cb9%3A0x3cd33f0d18b45517!2sPlace%20Laval!5e0!3m2!1sfr!2sca!4v1762119938029!5m2!1sfr!2sca"
@@ -58,15 +67,15 @@
                     </div>
                     <div>
                         <img src="https://placehold.co/600x800/272a34/d6d9e0/svg?text=Affiche des artistes\n600x800" alt="programmation" class="m-auto w-auto pt-16 spx-2" />
-                        <h1 class="text-6xl italic font-extrabold py-8 text-third">paragraphe</h1>
                     </div>
                 </div>
             </div>
+          </div>
         </section>
 
         <!-- Artists -->
         <section id="artists" class="bg-third">
-            <div class="max-w-[1000px] mx-auto py-8">
+            <div class="max-w-[1000px] mx-auto p-8">
                 <h2 class="text-4xl font-extrabold text-center text-text w-64 py-8 mx-auto">[title]</h2>
                 <div id="artists-container" class="grid grid-cols-2 md:grid-cols-3 gap-8"></div>
             </div>
@@ -74,17 +83,27 @@
 
         <!-- Past Event -->
         <section id="past-events" class="bg-third">
-            <div class="max-w-[1000px] mx-auto pb-16">
+            <div class="max-w-[1000px] mx-auto pb-16 px-8">
                 <h2 class="text-4xl font-extrabold text-center text-text py-8 mx-auto">[title]</h2>
-                <div id="past-events-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"></div>
+                <div id="past-events-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 z-10"></div>
             </div>
         </section>
 
-        <!-- Partners -->
+        <!-- partners -->
         <section id="partners" class="bg-third">
-            <div class="max-w-[1000px] mx-auto pb-8">
-                <h3 class="text-4xl font-extrabold text-center text-text mx-auto">[title]</h3>
-                <div id="support-partners" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 py-8"></div>
+            <div class="max-w-[1000px] mx-auto relative px-8">
+                <img src="images/46.png" 
+                  class="block absolute left-[-100px] bottom-[-260px] h-[512px] z-0" 
+                  alt="can"
+                >
+                <img src="images/45.png" 
+                  class="block absolute right-[-75px] bottom-[-110px] h-[128px] z-0 rotate-45" 
+                  alt="tickets"
+                >
+                <div class="max-w-[1000px] mx-auto pb-8">
+                    <h3 class="text-4xl font-extrabold text-center text-text mx-auto">[title]</h3>
+                    <div id="support-partners" class="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 gap-4 py-8"></div>
+                </div>
             </div>
             
         </section>
@@ -92,17 +111,18 @@
         <!-- ABOUT -->
         <section id="about" class="bg-first">
             <h2 class="text-4xl font-extrabold text-center text-text pt-16 pb-8">[title]</h2>
-
-            <div class="max-w-5xl mx-auto bg-second rounded-3xl shadow-[-3px_-3px_0_#142040] grid grid-cols-1 md:grid-cols-2">
-                <!-- image -->
-                <div class="overflow-hidden rounded-l-3xl">
-                    <img src="" alt="About section image" class="w-full h-full object-cover">
-                </div>
-                <!-- text -->
-                <div class="p-6 flex flex-col justify-center">
-                    <div class="prose prose-lg max-w-none text-gray-700">
-                        <p>[paragraph1]</p>
-                        <p>[paragraph2]</p>
+            <div class="mx-4 pb-4">
+                <div class="max-w-5xl mx-auto bg-second rounded-3xl shadow-[-3px_-3px_0_#142040] grid grid-cols-1 md:grid-cols-2 relative z-10">
+                    <!-- image -->
+                    <div class="overflow-hidden rounded-l-3xl">
+                        <img src="" alt="About section image" class="w-full h-full object-cover">
+                    </div>
+                    <!-- text -->
+                    <div class="p-6 flex flex-col justify-center">
+                        <div class="prose prose-lg max-w-none text-gray-700">
+                            <p>[paragraph1]</p>
+                            <p>[paragraph2]</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,7 +137,7 @@
         .then(res => res.json())
         .then(data => {
             document.querySelector('#home h1').textContent = data.title
-            document.querySelector('#home img').src = data.logo
+            document.getElementById('logo-image').src = data.logo
 
             document.getElementById('event-subtitle').textContent = data.subtitle;
             document.getElementById('event-date').textContent = data.time;
@@ -188,14 +208,13 @@
 
             data.support.forEach(p => {
                 const card = document.createElement('div');
-                card.className = `bg-bg h-24 rounded-lg shadow-md flex items-center justify-center p-4 border border-border-muted rounded-xl
+                card.className = `relative z-10 bg-bg h-16 rounded-lg shadow-md flex items-center justify-center border border-border-muted rounded-xl
                     border-t-highlight
-                    overflow-hidden
-                    bg-gradient-to-br from-bg-light to-bg
+                    bg-black
                     shadow-xl shadow-border/50
                 `;
                 card.innerHTML = `
-                    <img src="${p.logo}" alt="${p.name} Logo" class="max-h-12">
+                    <img src="${p.logo}" alt="${p.name} Logo" class="w-full h-auto object-cover rounded-lg shadow-md">
                 `;
                 supportContainer.appendChild(card);
             });
